@@ -1,0 +1,261 @@
+/* body{
+
+    
+    background-color: rgb(101, 88, 101);
+} */
+
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+    /* background-color: rgb(101, 88, 101) !important; */
+
+
+}
+.container{
+    display: flex !important;
+
+}
+main{
+    width: 100%;
+    padding: 20px;
+
+}
+.sidebar{
+    background-color:#253046;
+    /* background: rgb(101, 88, 101)  !important; */
+    color: white;
+    height: 100vh;
+    width: 200px !important;
+    transition: all 0.5s !important;
+
+}
+.topsection{
+    margin-top: 1px !important;
+    display: flex;
+    align-items: center;
+    padding: 20px 15px !important;
+   
+    
+  
+   
+}
+.logo{
+    font-size: 20px;
+    margin-left: 10px !important;
+    font-style: italic;
+
+}
+.bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 0px !important
+}
+.settings{
+    margin-left: 63px !important;
+}
+.link{
+    display: flex;
+    color: white;
+    padding: 10px 15px !important;
+    gap: 10px;
+    transition: all 0.5s;
+
+}
+.link:hover{
+    background: lightskyblue;
+    color: black;
+    transition: all 0.5s;
+
+}
+.active{
+    background: lightskyblue;
+    color: black;
+
+}
+.icon, .linktext{
+    font-size: 13px;
+    margin-top: 5px !important;
+
+
+}
+.tablecontainer{
+    margin-left: 15px !important;
+    width: 100%;
+    margin-top: 40px !important;
+    background-color:#253046 !important;
+}
+.topcontainer{
+    margin-top: 15px !important;
+    margin-left: 15px !important;
+    
+    width: 100%;
+
+}
+.topsubcontainer{
+    background-color:#253046;
+    /* background-color: rgb(101, 88, 101); */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color:#253046;
+    padding: 10px;
+    height: 200px;
+    width:100%;
+  
+  }
+  .grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    margin-left: 15px !important;
+    margin-top: 15px!important;
+    margin-bottom: 10px !important;
+  }
+  /* .gridone{
+    background-color: #fff;
+    border-radius: 50% !important;
+  } */
+  /* //list */
+  .textoutputcontainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px !important;
+  
+  }
+  .iconcontainer{
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50vmin;
+
+   
+  }
+  .datecontainer{
+    display: flex;
+    margin-left: 400px !important;
+    
+ 
+  }
+  .searchbutton{
+    margin-left: 10px !important;
+    padding: 10px;
+  }
+.toptablecontainer{
+    display: flex;
+flex-direction: column;
+}
+
+.dropdowncontainer{
+    display: flex;
+    gap: 10px !important;
+    margin-bottom: 10px !important;
+    margin-top: 25px !important;
+    margin-left: 20px !important;
+    
+    
+    
+}
+.dropdownbutton{
+ 
+}
+.dropdown{
+
+    /* background-color:black !important; */
+
+}
+
+.pagenumbersection{
+
+    margin-top: 20px !important;
+}
+.pagination{
+    cursor: pointer;
+    gap: 12px;
+    float: right;
+    border: 1px solid  #253046 !important;
+ 
+    
+}
+.pagelink{
+    color: white;
+    padding: 3px!important;
+}
+li:hover{
+    background:skyblue;
+
+}
+.activepage{
+    background-color:skyblue;
+    color: black;
+
+}
+
+/* setting responsiveness */
+@media only screen and (max-width: 1100px){
+    .toptablecontainer{
+        width:700px !important;
+
+    }
+    .datecontainer{
+      /* width:100px !important; */
+        /* size: 20px !important; */
+        margin-left: 1px !important;
+
+    }
+    .searchbutton{
+        padding:1px !important;
+     margin-left: 5px !important;
+    }
+}
+
+
+@media only screen and (max-width: 930px){
+    .toptablecontainer{
+        width:900px !important;
+        display: flex;flex-direction: column;
+    }
+   
+}
+@media only screen and (max-width: 750px){
+    .toptablecontainer{
+        width:700px !important;
+        display: flex;flex-direction: column;
+    }
+    .grid-container {
+       
+        padding: 5px !important;
+        height: 200px !important;
+       
+       
+      
+      }
+      .grid-item {
+       
+        padding: 10px !important;
+        font-size: 15px !important;
+        text-align: center !important;
+        display: flex !important;
+        margin-left: 10px !important;
+        margin-top: 10px!important;
+        margin-bottom: 5px !important;
+      }
+      .iconcontainer{
+     
+        
+        border-radius: 50vmin !important;
+    
+       
+      }
+      .staticon{
+        text-align: center !important;
+      }
+   
+}
+
+
+
