@@ -27,7 +27,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 
 const SideBar = ({ children }) => {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
   const [details, setDetails] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postperpage, setPostperpage] = useState(1);
@@ -85,9 +85,9 @@ const SideBar = ({ children }) => {
   //     // console.log(details)
   //   });
   // });
-  const toggle = () => {
-    setOpen(!open);
-  };
+  // const toggle = () => {
+  //   setOpen(!open);
+  // };
   const handleChange = (e)=>{
     const selectedvalue=e.target.value;
     setPostperpage(selectedvalue)
@@ -163,16 +163,16 @@ const SideBar = ({ children }) => {
     <div className="container">
      {/* <h1 style={{color:"white"}}>{stat.churn}</h1> */}
       <div className="sidebarcontainer">
-        <div style={{ width: open ? "300px" : "50px" }} className="sidebar">
+        <div className="sidebar">
           <div className="topsection">
-            <div style={{ marginLeft: open ? "50px" : "0px" }} className="bars">
+            <div className="bars">
               <IoLogoCodepen />
             </div>
-            <h1 style={{ display: open ? "block" : "none" }} className="logo">
+            <h1 className="logo">
               WOW
             </h1>
             <div className="settings">
-              <FiSettings style={{cursor:"pointer"}} onClick={ toggle} />
+              <FiSettings style={{cursor:"pointer"}} />
             </div>
           </div>
 
@@ -185,7 +185,7 @@ const SideBar = ({ children }) => {
             >
               <div className="icon">{item.icon}</div>
               <div
-                style={{ display: open ? "block" : "none" }}
+                
                 className="linktext"
               >
                 {item.name}
